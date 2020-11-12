@@ -1,6 +1,6 @@
 # Vacation Planner
 
-> This repository contains the front-end for the collaborative project Vacation Planner. Within this app, expect to find an application with CRUD functionality allowing users log and communicate about their upcoming vacations!
+> This repository contains the front-end for the collaborative project Vacation Planner. Within this app, expect to find an application with CRUD functionality allowing users to log and communicate about their upcoming vacations!
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
