@@ -1,15 +1,15 @@
-# Weight Lifting Journal
+# Vacation Planner
 
-> This repository contains the front-end for the collaborative project Weight Lifting Journal. Within this app, expect to find an application with CRUD functionality allowing users to log their workouts!
+> This repository contains the front-end for the collaborative project Vacation Planner. Within this app, expect to find an application with CRUD functionality allowing users log and communicate about their upcoming vacations!
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 
-Weight Lifting Journal is a web application for keeping track of a workout routine. This project was a collaborative effort between of a team of 5 cross-functional developers, completed in 1 week. The application was created using React, React Router, and vanilla CSS. I (Adam Monast) was personally responsible for implementing sign-in/sign up forms and functionality, and styling the entire project. 
+Vacation Planner is a social media web application for planning, inviting, and communicating about a user's upcoming vacations. Users have the ability to create vacation components in their dashboards, add activites, comments, and invite other users to said vacation. This project was a collaborative effort between of a team of 6 cross-functional developers, completed in 1 week. The application was created using React, Redux, React Router, React-Redux, and vanilla CSS. I (Adam Monast) was responsible for designing/implementing the main app functionality on the frontend.
 
-Future plans for this project include: Fixing the bugs with adding body weight entries, implementing my own backend API to power the app (I do not have access to the current one), implementing a better state management system using Redux, and fixing styling issues the deployed site is experiecing. Thank you for viewing this project and all feedback is appreciated!
+Future plans for this project include: Fixing the bugs with adding comments, implementing my own backend API to power the app (I do not have access to the current one), and cleaning up the code for better maintainability and keeping it DRY. Thank you for viewing this project and all feedback is appreciated!
 
-<img src=https://user-images.githubusercontent.com/57102880/98874564-7e4aab00-2448-11eb-9d43-c7e2d2029224.png align="center" width="600" height="350">
+<img src="" align="center" width="600" height="350">
 
 ## Technologies Used:
 [<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />][github]
