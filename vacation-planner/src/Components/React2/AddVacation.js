@@ -35,27 +35,30 @@ const AddVacation = props => {
   };
 
   return (
-    <div>
-      <h1>Add Vacation</h1>
-      <form onSubmit={handleSubmit}>
-        <input
+    <div className ="addVacationCard"> 
+      <h2>Add Vacation</h2>
+      <form className ="form" onSubmit={handleSubmit}>
+        <input className ='input'
           name="vacation_name"
+          placeholder="Vacation Name"
           type="text"
+          placeholder ="Destination"
           value={vacation.vacation_name}
           onChange={handleChanges}
           required
         />
-        <input
+        <input className ='input'
           name="vacation_description"
+          placeholder="Description"
           type="textarea"
+          placeholder ="Details"
           value={vacation.vacation_description}
           onChange={handleChanges}
           required
         />
-        <button>Submit</button>
+        <button className = "button">Submit</button>
       </form>
     </div>
   );
 };
-
 export default AddVacation;

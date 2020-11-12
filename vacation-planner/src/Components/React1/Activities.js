@@ -1,7 +1,6 @@
 import React,{useState, useEffect} from 'react';
 import Axios from 'axios';
 
-
 const Activities = ()  => {
 
 const [activity, setActivity] = useState([])

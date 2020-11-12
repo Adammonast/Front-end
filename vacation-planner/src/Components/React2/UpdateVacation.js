@@ -3,24 +3,22 @@ import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../Utilities/AxiosWithAuth";
 
 function UpdateVacation(props) {
-
   const [vacation, setVacation] = useState({
-
-        id: props.match.params.id,
-        isLogged: false,
-        user: {
-            user_Id: null,
-            user_Name: null
-        },
-        vacations: []
-    })
+    id: props.match.params.id,
+    isLogged: false,
+    user: {
+      user_Id: null,
+      user_Name: null
+    },
+    vacations: []
+  });
 
   useEffect(() => {
-    console.log(props.match.params.id)
+    console.log(props.match.params.id);
     axiosWithAuth()
-    .get(`/vacations/${props.match.params.id}`)
+      .get(`/vacations/${props.match.params.id}`)
       .then(res => {
-        console.log("RESPONSE!!!!!", res)
+        console.log("RESPONSE!!!!!", res);
         setVacation(res.data.vacation);
       })
       .catch(err => console.log(err.response));
@@ -30,9 +28,9 @@ function UpdateVacation(props) {
     e.preventDefault();
     console.log("Vacation:", vacation);
     axiosWithAuth()
-    .put(`vacations/${props.match.params.id}`, vacation)
+      .put(`vacations/${props.match.params.id}`, vacation)
       .then(res => {
-        console.log(res)
+        console.log(res);
         props.history.push(`/dashboard`);
       })
       .catch(err => console.log(err));
@@ -40,29 +38,30 @@ function UpdateVacation(props) {
 
   const handleChanges = e => {
     setVacation({
-            ...vacation,
-            [e.target.name]: e.target.value 
-        });
+      ...vacation,
+      [e.target.name]: e.target.value
+    });
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit} className="form">
-        <input
+    <div className = "editVacation"> 
+    <h2>Edit Vacation</h2>
+      <form className = "form" onSubmit={handleSubmit} className="form">
+        <input className = "input"
           name="vacation_name"
           type="text"
           value={vacation.vacation_name}
           onChange={handleChanges}
           required
         />
-        <input
+        <input className = " input"
           name="vacation_description"
           type="textarea"
           value={vacation.vacation_description}
           onChange={handleChanges}
           required
         />
-        <button type="submit">Done</button>
+        <button className = "button" type="submit">Done</button>
       </form>
     </div>
   );
