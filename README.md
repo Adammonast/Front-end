@@ -55,7 +55,7 @@ Once you start the development server you're good to start using Vacation Planne
 
 <br />
 
-<img src="https://user-images.githubusercontent.com/57102880/98890905-017cf880-246b-11eb-82d4-ba702d44c342.png" align="center" width="400" height="250" />
+<img src="https://user-images.githubusercontent.com/57102880/98890905-017cf880-246b-11eb-82d4-ba702d44c342.png" align="center" width="600" height="350" />
 
 ## Let's Connect!
 
